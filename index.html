@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bezpłatny audyt widoczności online i procesów biznesowych. Sprawdź, co kryje się pod powierzchnią Twojego biznesu.">
+  <title>Logic-Flow — Bezpłatny Audyt Widoczności i Automatyzacji Biznesu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════
+       NAV
+  ══════════════════════════════════════ -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo">
+          <span class="nav__logo-main">LOGIC-<span class="logo-cyan">FLOW</span></span>
+          <span class="nav__logo-sub">_marketing</span>
+        </a>
+      <button class="nav__burger" id="burger" aria-label="Otwórz menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav__menu" id="navMenu">
+        <a href="#dowod" class="nav__link">Przykładowy raport</a>
+        <a href="#mechanizm" class="nav__link">Co badamy</a>
+        <a href="#o-nas" class="nav__link">O nas</a>
+        <a href="#formularz" class="nav__cta-btn">Bezpłatny audyt strony WWW &rarr;</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ══════════════════════════════════════
+       HERO
+  ══════════════════════════════════════ -->
+  <section class="hero" id="start">
+    <div class="hero__inner">
+
+      <!-- Left: text -->
+      <div class="hero__content">
+        <p class="hero__eyebrow">Bezpłatna diagnoza</p>
+        <h1 class="hero__h1">Twoja strona WWW<br>to tylko wierzchołek<br>góry lodowej.</h1>
+        <p class="hero__lead">Sprawdź, co naprawdę wpływa na rozwój Twojej firmy.</p>
+        <p class="hero__desc">To, co widzisz na stronie internetowej, jest tylko częścią obrazu. Głębiej znajdują się procesy pozyskiwania klientów, sprzedaży, obsługi leadów i danych, które często decydują o wynikach całego biznesu.</p>
+        <div class="hero__ctas">
+          <a href="#formularz" class="btn btn--primary">Zamawiam bezpłatny audyt strony WWW &rarr;</a>
+          <a href="#dowod" class="btn btn--hero-outline">Zobacz przykładowy raport strony WWW &rarr;</a>
+        </div>
+      </div>
+
+      <!-- Right: iceberg visual -->
+      <div class="hero__visual">
+        <div class="ice-scene">
+          <img class="ice-img" src="hero-main.jpeg" alt="Góra lodowa — widoczna i niewidoczna część biznesu" loading="eager">
+
+          <!-- Adnotacje nad wodą -->
+          <div class="ice-anno ice-anno--above">
+            <p class="ice-anno__heading">CO WIDZISZ KAŻDEGO DNIA</p>
+            <ul class="ice-anno__list">
+              <li>
+                <span class="ice-anno__line"></span>
+                <span class="ice-anno__dot"></span>
+                <svg class="ice-anno__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                <span class="ice-anno__text">Strona WWW</span>
+              </li>
+              <li>
+                <span class="ice-anno__line"></span>
+                <span class="ice-anno__dot"></span>
+                <svg class="ice-anno__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor"/></svg>
+                <span class="ice-anno__text">Social media</span>
+              </li>
+              <li>
+                <span class="ice-anno__line"></span>
+                <span class="ice-anno__dot"></span>
+                <svg class="ice-anno__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg>
+                <span class="ice-anno__text">Reklamy</span>
+              </li>
+              <li>
+                <span class="ice-anno__line"></span>
+                <span class="ice-anno__dot"></span>
+                <svg class="ice-anno__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 12l2 2 4-4"/></svg>
+                <span class="ice-anno__text">Branding</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Adnotacje pod wodą -->
+          <div class="ice-anno ice-anno--below">
+            <p class="ice-anno__heading">CO NAPRAWDĘ<br>DECYDUJE O WYNIKACH</p>
+            <ul class="ice-anno__list">
+              <li>
+                <span class="ice-anno__line"></span>
+                <span class="ice-anno__dot"></span>
+                <svg class="ice-anno__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <span class="ice-anno__text">SEO i widoczność</span>
+              </li>
+              <li>
+                <span class="ice-anno__line"></span>
+                <span class="ice-anno__dot"></span>
+                <svg class="ice-anno__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                <span class="ice-anno__text">CRM i leady</span>
+              </li>
+              <li>
+                <span class="ice-anno__line"></span>
+                <span class="ice-anno__dot"></span>
+                <svg class="ice-anno__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                <span class="ice-anno__text">Automatyzacje</span>
+              </li>
+              <li>
+                <span class="ice-anno__line"></span>
+                <span class="ice-anno__dot"></span>
+                <svg class="ice-anno__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+                <span class="ice-anno__text">Analityka i dane</span>
+              </li>
+              <li>
+                <span class="ice-anno__line"></span>
+                <span class="ice-anno__dot"></span>
+                <svg class="ice-anno__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg>
+                <span class="ice-anno__text">AI w obsłudze</span>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       GEAR DIVIDER — hero → raport
+  ══════════════════════════════════════ -->
+  <div class="gear-divider gear-divider--white" aria-hidden="true">
+    <div class="gear-divider__line"></div>
+    <svg class="gear-deco gear-deco--lg" viewBox="0 0 160 160" fill="none">
+      <circle cx="80" cy="80" r="72" stroke="#D4AF37" stroke-width="1" stroke-dasharray="6 3"/>
+      <circle cx="80" cy="80" r="58" stroke="#D4AF37" stroke-width="0.5" stroke-dasharray="3 4"/>
+      <circle cx="80" cy="80" r="40" stroke="#D4AF37" stroke-width="0.75"/>
+      <circle cx="80" cy="80" r="12" stroke="#D4AF37" stroke-width="1"/>
+      <line x1="80" y1="8"   x2="80"  y2="40"  stroke="#D4AF37" stroke-width="0.75"/>
+      <line x1="152" y1="80" x2="120" y2="80"  stroke="#D4AF37" stroke-width="0.75"/>
+      <line x1="80"  y1="152" x2="80" y2="120" stroke="#D4AF37" stroke-width="0.75"/>
+      <line x1="8"   y1="80"  x2="40" y2="80"  stroke="#D4AF37" stroke-width="0.75"/>
+      <line x1="26"  y1="26"  x2="52" y2="52"  stroke="#D4AF37" stroke-width="0.5"/>
+      <line x1="134" y1="26"  x2="108" y2="52" stroke="#D4AF37" stroke-width="0.5"/>
+      <line x1="26"  y1="134" x2="52" y2="108" stroke="#D4AF37" stroke-width="0.5"/>
+      <line x1="134" y1="134" x2="108" y2="108" stroke="#D4AF37" stroke-width="0.5"/>
+    </svg>
+    <svg class="gear-deco gear-deco--sm" viewBox="0 0 100 100" fill="none">
+      <circle cx="50" cy="50" r="44" stroke="#D4AF37" stroke-width="0.75" stroke-dasharray="5 3"/>
+      <circle cx="50" cy="50" r="32" stroke="#D4AF37" stroke-width="0.5"/>
+      <circle cx="50" cy="50" r="8"  stroke="#D4AF37" stroke-width="0.75"/>
+      <line x1="50" y1="6"  x2="50" y2="24" stroke="#D4AF37" stroke-width="0.5"/>
+      <line x1="94" y1="50" x2="76" y2="50" stroke="#D4AF37" stroke-width="0.5"/>
+      <line x1="50" y1="94" x2="50" y2="76" stroke="#D4AF37" stroke-width="0.5"/>
+      <line x1="6"  y1="50" x2="24" y2="50" stroke="#D4AF37" stroke-width="0.5"/>
+    </svg>
+  </div>
+
+  <!-- ══════════════════════════════════════
+       RAPORT — bezpłatna diagnoza strony WWW
+  ══════════════════════════════════════ -->
+  <section class="proof" id="dowod">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Przykładowy raport</p>
+        <h2>Zobacz, co naprawdę mówi Twoja strona&nbsp;WWW.</h2>
+        <p>Bezpłatny raport pokazuje wynik strony, najważniejsze problemy oraz konkretne rekomendacje działań. Bez ogólników i bez udawania, że jeden raport rozwiązuje cały biznes.</p>
+      </div>
+
+      <div class="proof__layout reveal">
+
+        <div class="report-doc">
+          <div class="report-doc__header">
+            <div class="report-doc__meta">
+              <span class="report-doc__tag">RAPORT STRONY WWW</span>
+              <p class="report-doc__firm">Przykładowy Klient Sp. z o.o.</p>
+              <p class="report-doc__date">Czerwiec 2025</p>
+            </div>
+            <div class="report-doc__score-wrap">
+              <svg class="score-ring" viewBox="0 0 120 120" aria-label="Wynik ogólny: 67 na 100">
+                <circle cx="60" cy="60" r="50" fill="none" stroke="rgba(10,15,36,0.06)" stroke-width="9"/>
+                <circle class="score-ring-progress" cx="60" cy="60" r="50" fill="none" stroke="#D4AF37" stroke-width="9"
+                  stroke-dasharray="314" stroke-dashoffset="314"
+                  stroke-linecap="round" transform="rotate(-90 60 60)"
+                  data-target-offset="104"/>
+              </svg>
+              <div class="score-value">
+                <span class="score-num" data-target="67">0</span>
+                <span class="score-denom">/100</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="report-doc__areas">
+            <div class="area-row"><span class="area-name">Komunikacja marki</span><div class="area-bar"><div class="area-fill area-fill--warn" style="width:0" data-w="58"></div></div><span class="area-val area-val--warn">58</span></div>
+            <div class="area-row"><span class="area-name">Konwersja (CRO)</span><div class="area-bar"><div class="area-fill area-fill--ok" style="width:0" data-w="71"></div></div><span class="area-val area-val--ok">71</span></div>
+            <div class="area-row"><span class="area-name">SEO i widoczność</span><div class="area-bar"><div class="area-fill area-fill--warn" style="width:0" data-w="52"></div></div><span class="area-val area-val--warn">52</span></div>
+            <div class="area-row"><span class="area-name">Zaufanie i dowody</span><div class="area-bar"><div class="area-fill area-fill--bad" style="width:0" data-w="38"></div></div><span class="area-val area-val--bad">38</span></div>
+            <div class="area-row"><span class="area-name">Strategia treści</span><div class="area-bar"><div class="area-fill area-fill--ok" style="width:0" data-w="67"></div></div><span class="area-val area-val--ok">67</span></div>
+            <div class="area-row"><span class="area-name">Szybkość i technika</span><div class="area-bar"><div class="area-fill area-fill--ok" style="width:0" data-w="80"></div></div><span class="area-val area-val--ok">80</span></div>
+          </div>
+
+          <div class="report-doc__priorities">
+            <p class="priority-heading">Priorytety do wdrożenia</p>
+            <div class="priority-item"><span class="priority-dot priority-dot--high"></span><span>Niejasny nagłówek główny — brak połączenia z problemem klienta</span></div>
+            <div class="priority-item"><span class="priority-dot priority-dot--high"></span><span>Brak dowodów zaufania powyżej linii scrollu</span></div>
+            <div class="priority-item"><span class="priority-dot priority-dot--med"></span><span>14 podstron bez dedykowanych słów kluczowych</span></div>
+          </div>
+        </div>
+
+        <div class="proof__info">
+          <h3>Co znajdziesz w&nbsp;raporcie?</h3>
+          <div class="proof-cards">
+            <div class="proof-card">
+              <span class="proof-card__num">01</span>
+              <strong>Wynik strony</strong>
+              <p>Ocena ogólna oraz wyniki w kluczowych obszarach: komunikacja, konwersja, SEO, zaufanie i strategia wzrostu.</p>
+            </div>
+            <div class="proof-card">
+              <span class="proof-card__num">02</span>
+              <strong>Konkretne problemy</strong>
+              <p>Lista elementów osłabiających skuteczność strony — niejasny nagłówek, słabe CTA, brak dowodów zaufania, niska widoczność.</p>
+            </div>
+            <div class="proof-card">
+              <span class="proof-card__num">03</span>
+              <strong>Priorytety działań</strong>
+              <p>Rekomendacje uporządkowane według wpływu na wynik. Wiesz, od czego zacząć, zamiast dostawać przypadkową listę uwag.</p>
+            </div>
+            <div class="proof-card">
+              <span class="proof-card__num">04</span>
+              <strong>Plan pierwszych kroków</strong>
+              <p>Krótka mapa działań: co poprawić teraz, co zaplanować później i które elementy wymagają głębszej analizy.</p>
+            </div>
+          </div>
+          <div class="proof__ctas">
+            <a href="#formularz" class="btn btn--primary">Sprawdź swoją stronę &rarr;</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       GEAR DIVIDER — raport → mechanizm
+  ══════════════════════════════════════ -->
+  <div class="gear-divider" aria-hidden="true">
+    <div class="gear-divider__line"></div>
+    <svg class="gear-deco gear-deco--lg" viewBox="0 0 160 160" fill="none">
+      <circle cx="80" cy="80" r="72" stroke="#D4AF37" stroke-width="1" stroke-dasharray="6 3"/>
+      <circle cx="80" cy="80" r="58" stroke="#D4AF37" stroke-width="0.5" stroke-dasharray="3 4"/>
+      <circle cx="80" cy="80" r="40" stroke="#D4AF37" stroke-width="0.75"/>
+      <circle cx="80" cy="80" r="12" stroke="#D4AF37" stroke-width="1"/>
+      <line x1="80" y1="8"   x2="80"  y2="40"  stroke="#D4AF37" stroke-width="0.75"/>
+      <line x1="152" y1="80" x2="120" y2="80"  stroke="#D4AF37" stroke-width="0.75"/>
+      <line x1="80"  y1="152" x2="80" y2="120" stroke="#D4AF37" stroke-width="0.75"/>
+      <line x1="8"   y1="80"  x2="40" y2="80"  stroke="#D4AF37" stroke-width="0.75"/>
+      <line x1="26"  y1="26"  x2="52" y2="52"  stroke="#D4AF37" stroke-width="0.5"/>
+      <line x1="134" y1="26"  x2="108" y2="52" stroke="#D4AF37" stroke-width="0.5"/>
+      <line x1="26"  y1="134" x2="52" y2="108" stroke="#D4AF37" stroke-width="0.5"/>
+      <line x1="134" y1="134" x2="108" y2="108" stroke="#D4AF37" stroke-width="0.5"/>
+    </svg>
+    <svg class="gear-deco gear-deco--sm" viewBox="0 0 100 100" fill="none">
+      <circle cx="50" cy="50" r="44" stroke="#D4AF37" stroke-width="0.75" stroke-dasharray="5 3"/>
+      <circle cx="50" cy="50" r="32" stroke="#D4AF37" stroke-width="0.5"/>
+      <circle cx="50" cy="50" r="8"  stroke="#D4AF37" stroke-width="0.75"/>
+      <line x1="50" y1="6"  x2="50" y2="24" stroke="#D4AF37" stroke-width="0.5"/>
+      <line x1="94" y1="50" x2="76" y2="50" stroke="#D4AF37" stroke-width="0.5"/>
+      <line x1="50" y1="94" x2="50" y2="76" stroke="#D4AF37" stroke-width="0.5"/>
+      <line x1="6"  y1="50" x2="24" y2="50" stroke="#D4AF37" stroke-width="0.5"/>
+    </svg>
+  </div>
+
+  <!-- ══════════════════════════════════════
+       SYSTEM — Twój biznes to system
+  ══════════════════════════════════════ -->
+  <section class="system" id="mechanizm">
+
+    <!-- Decorative background mechanism -->
+    <div class="sys-bg" aria-hidden="true">
+      <svg class="sys-bg-svg" viewBox="0 0 1440 800" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <filter id="macroBlur" x="-10%" y="-10%" width="120%" height="120%">
+            <feGaussianBlur stdDeviation="1.8"/>
+          </filter>
+          <filter id="gearBlur" x="-5%" y="-5%" width="110%" height="110%">
+            <feGaussianBlur stdDeviation="0.5"/>
+          </filter>
+          <radialGradient id="ambientTR" cx="1440" cy="0" r="780" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#D4AF37" stop-opacity="0.18"/>
+            <stop offset="100%" stop-color="#D4AF37" stop-opacity="0"/>
+          </radialGradient>
+          <radialGradient id="ambientBL" cx="0" cy="800" r="680" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#D4AF37" stop-opacity="0.12"/>
+            <stop offset="100%" stop-color="#D4AF37" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+
+        <!-- Ambient glow — layer 3 -->
+        <rect width="1440" height="800" fill="url(#ambientTR)"/>
+        <rect width="1440" height="800" fill="url(#ambientBL)"/>
+
+        <!-- ═══ LAYER 1: Macro rings — CSS-animated (120–180s) ═══ -->
+
+        <!-- Macro mechanism A — top-right, extends off-screen -->
+        <g transform="translate(1340, -60)" filter="url(#macroBlur)">
+          <g class="sys-macro-ring sys-macro-ring--a">
+            <!-- Outer precision rings -->
+            <circle r="660" fill="none" stroke="#D4AF37" stroke-width="1.4"  opacity="0.38"/>
+            <circle r="642" fill="none" stroke="#D4AF37" stroke-width="0.7"  stroke-dasharray="3 64"   opacity="0.48" stroke-linecap="round"/>
+            <circle r="624" fill="none" stroke="#D4AF37" stroke-width="1.8"  opacity="0.28"/>
+            <circle r="606" fill="none" stroke="#D4AF37" stroke-width="0.7"  stroke-dasharray="10 305" opacity="0.54" stroke-linecap="round"/>
+            <circle r="588" fill="none" stroke="#D4AF37" stroke-width="0.8"  stroke-dasharray="3 120"  opacity="0.34" stroke-linecap="round"/>
+            <circle r="570" fill="none" stroke="#0A0F24" stroke-width="0.6"  opacity="0.24"/>
+            <circle r="552" fill="none" stroke="#D4AF37" stroke-width="0.9"  opacity="0.34"/>
+            <circle r="530" fill="none" stroke="#D4AF37" stroke-width="0.55" stroke-dasharray="2 44"   opacity="0.30" stroke-linecap="round"/>
+            <!-- Axis crosshairs -->
+            <line x1="-660" y1="0"    x2="660"  y2="0"    stroke="#D4AF37" stroke-width="0.6" opacity="0.30"/>
+            <line x1="0"    y1="-660" x2="0"    y2="660"  stroke="#D4AF37" stroke-width="0.6" opacity="0.30"/>
+            <line x1="-467" y1="-467" x2="467"  y2="467"  stroke="#D4AF37" stroke-width="0.4" opacity="0.20"/>
+            <line x1="467"  y1="-467" x2="-467" y2="467"  stroke="#D4AF37" stroke-width="0.4" opacity="0.20"/>
+            <!-- Jewel bearings at cardinal r=624 -->
+            <circle cx="0"    cy="-624" r="10" fill="none" stroke="#D4AF37" stroke-width="1.6" opacity="0.52"/>
+            <circle cx="624"  cy="0"    r="10" fill="none" stroke="#D4AF37" stroke-width="1.6" opacity="0.52"/>
+            <circle cx="0"    cy="624"  r="10" fill="none" stroke="#D4AF37" stroke-width="1.6" opacity="0.52"/>
+            <circle cx="-624" cy="0"    r="10" fill="none" stroke="#D4AF37" stroke-width="1.6" opacity="0.52"/>
+            <!-- Inner precision detail -->
+            <circle r="420" fill="none" stroke="#D4AF37" stroke-width="0.8"  opacity="0.24"/>
+            <circle r="400" fill="none" stroke="#D4AF37" stroke-width="0.55" stroke-dasharray="3 52" opacity="0.28" stroke-linecap="round"/>
+          </g>
+        </g>
+
+        <!-- Macro mechanism B — bottom-left, counter-rotation -->
+        <g transform="translate(100, 860)" filter="url(#macroBlur)">
+          <g class="sys-macro-ring sys-macro-ring--b">
+            <circle r="550" fill="none" stroke="#D4AF37" stroke-width="1.3"  opacity="0.34"/>
+            <circle r="534" fill="none" stroke="#D4AF37" stroke-width="0.65" stroke-dasharray="3 53"   opacity="0.44" stroke-linecap="round"/>
+            <circle r="518" fill="none" stroke="#D4AF37" stroke-width="1.6"  opacity="0.24"/>
+            <circle r="502" fill="none" stroke="#D4AF37" stroke-width="0.65" stroke-dasharray="10 253" opacity="0.50" stroke-linecap="round"/>
+            <circle r="486" fill="none" stroke="#D4AF37" stroke-width="0.75" stroke-dasharray="3 101"  opacity="0.30" stroke-linecap="round"/>
+            <circle r="470" fill="none" stroke="#0A0F24" stroke-width="0.50" opacity="0.20"/>
+            <circle r="454" fill="none" stroke="#D4AF37" stroke-width="0.80" opacity="0.30"/>
+            <!-- Axis -->
+            <line x1="-550" y1="0"    x2="550"  y2="0"    stroke="#D4AF37" stroke-width="0.55" opacity="0.28"/>
+            <line x1="0"    y1="-550" x2="0"    y2="550"  stroke="#D4AF37" stroke-width="0.55" opacity="0.28"/>
+            <line x1="-389" y1="-389" x2="389"  y2="389"  stroke="#D4AF37" stroke-width="0.38" opacity="0.18"/>
+            <line x1="389"  y1="-389" x2="-389" y2="389"  stroke="#D4AF37" stroke-width="0.38" opacity="0.18"/>
+            <!-- Jewels at r=518 -->
+            <circle cx="0"    cy="-518" r="9" fill="none" stroke="#D4AF37" stroke-width="1.4" opacity="0.44"/>
+            <circle cx="518"  cy="0"    r="9" fill="none" stroke="#D4AF37" stroke-width="1.4" opacity="0.44"/>
+            <circle cx="0"    cy="518"  r="9" fill="none" stroke="#D4AF37" stroke-width="1.4" opacity="0.44"/>
+            <circle cx="-518" cy="0"    r="9" fill="none" stroke="#D4AF37" stroke-width="1.4" opacity="0.44"/>
+            <!-- Inner detail ring -->
+            <circle r="340" fill="none" stroke="#D4AF37" stroke-width="0.7"  opacity="0.24"/>
+            <circle r="322" fill="none" stroke="#D4AF37" stroke-width="0.50" stroke-dasharray="2 40" opacity="0.24" stroke-linecap="round"/>
+          </g>
+        </g>
+
+        <!-- ═══ LAYER 2: Precision watch-movement mechanisms ═══ -->
+
+        <!-- Movement 1: Large — bottom-right, scroll-rotated -->
+        <g transform="translate(1360, 660)" filter="url(#gearBlur)">
+          <g class="sys-gear" id="sysGear1">
+            <!-- Outer bezel rings -->
+            <circle r="286" fill="none" stroke="#D4AF37" stroke-width="1.1"/>
+            <circle r="268" fill="none" stroke="#D4AF37" stroke-width="0.45" stroke-dasharray="2 25" stroke-linecap="round"/>
+            <circle r="256" fill="none" stroke="#D4AF37" stroke-width="0.6"/>
+            <circle r="230" fill="none" stroke="#D4AF37" stroke-width="1.4"  stroke-dasharray="8 107" stroke-linecap="round"/>
+            <circle r="214" fill="none" stroke="#D4AF37" stroke-width="0.35"/>
+            <!-- Middle rings — movement plates -->
+            <circle r="188" fill="none" stroke="#D4AF37" stroke-width="0.55"/>
+            <circle r="158" fill="none" stroke="#D4AF37" stroke-width="0.35" stroke-dasharray="2 16" stroke-linecap="round"/>
+            <circle r="130" fill="none" stroke="#D4AF37" stroke-width="0.50"/>
+            <!-- Inner hub -->
+            <circle r="76"  fill="none" stroke="#D4AF37" stroke-width="0.7"/>
+            <circle r="52"  fill="none" stroke="#D4AF37" stroke-width="1.0"/>
+            <circle r="36"  fill="none" stroke="#D4AF37" stroke-width="0.6"/>
+            <circle r="14"  fill="none" stroke="#D4AF37" stroke-width="0.8"/>
+            <circle r="4.5" fill="#D4AF37"/>
+            <!-- Full axis lines -->
+            <line x1="0" y1="-286" x2="0"    y2="286"  stroke="#D4AF37" stroke-width="0.45"/>
+            <line x1="-286" y1="0" x2="286"  y2="0"    stroke="#D4AF37" stroke-width="0.45"/>
+            <line x1="-202" y1="-202" x2="202" y2="202" stroke="#D4AF37" stroke-width="0.30"/>
+            <line x1="202"  y1="-202" x2="-202" y2="202" stroke="#D4AF37" stroke-width="0.30"/>
+            <!-- Jewel bearings at cardinal — r=188 -->
+            <circle cx="0"    cy="-188" r="6" fill="none" stroke="#D4AF37" stroke-width="1.0"/>
+            <circle cx="188"  cy="0"    r="6" fill="none" stroke="#D4AF37" stroke-width="1.0"/>
+            <circle cx="0"    cy="188"  r="6" fill="none" stroke="#D4AF37" stroke-width="1.0"/>
+            <circle cx="-188" cy="0"    r="6" fill="none" stroke="#D4AF37" stroke-width="1.0"/>
+            <!-- Hub spokes -->
+            <line x1="36"  y1="0"   x2="76"   y2="0"    stroke="#D4AF37" stroke-width="0.55"/>
+            <line x1="-36" y1="0"   x2="-76"  y2="0"    stroke="#D4AF37" stroke-width="0.55"/>
+            <line x1="0"   y1="36"  x2="0"    y2="76"   stroke="#D4AF37" stroke-width="0.55"/>
+            <line x1="0"   y1="-36" x2="0"    y2="-76"  stroke="#D4AF37" stroke-width="0.55"/>
+            <line x1="25"  y1="-25" x2="54"   y2="-54"  stroke="#D4AF37" stroke-width="0.35"/>
+            <line x1="-25" y1="-25" x2="-54"  y2="-54"  stroke="#D4AF37" stroke-width="0.35"/>
+            <line x1="-25" y1="25"  x2="-54"  y2="54"   stroke="#D4AF37" stroke-width="0.35"/>
+            <line x1="25"  y1="25"  x2="54"   y2="54"   stroke="#D4AF37" stroke-width="0.35"/>
+            <!-- Bridge arms outer -->
+            <line x1="52"  y1="0"   x2="130"  y2="0"    stroke="#D4AF37" stroke-width="0.45"/>
+            <line x1="-52" y1="0"   x2="-130" y2="0"    stroke="#D4AF37" stroke-width="0.45"/>
+            <line x1="0"   y1="52"  x2="0"    y2="130"  stroke="#D4AF37" stroke-width="0.45"/>
+            <line x1="0"   y1="-52" x2="0"    y2="-130" stroke="#D4AF37" stroke-width="0.45"/>
+          </g>
+        </g>
+
+        <!-- Movement 2: Medium — left edge, scroll-rotated -->
+        <g transform="translate(-25, 310)" filter="url(#gearBlur)">
+          <g class="sys-gear" id="sysGear2">
+            <circle r="204" fill="none" stroke="#D4AF37" stroke-width="0.9"/>
+            <circle r="190" fill="none" stroke="#D4AF37" stroke-width="0.40" stroke-dasharray="2 20" stroke-linecap="round"/>
+            <circle r="178" fill="none" stroke="#D4AF37" stroke-width="0.55"/>
+            <circle r="156" fill="none" stroke="#D4AF37" stroke-width="1.2"  stroke-dasharray="7 73" stroke-linecap="round"/>
+            <circle r="140" fill="none" stroke="#D4AF37" stroke-width="0.35"/>
+            <circle r="116" fill="none" stroke="#D4AF37" stroke-width="0.50"/>
+            <circle r="90"  fill="none" stroke="#D4AF37" stroke-width="0.30" stroke-dasharray="2 14" stroke-linecap="round"/>
+            <circle r="66"  fill="none" stroke="#D4AF37" stroke-width="0.55"/>
+            <circle r="44"  fill="none" stroke="#D4AF37" stroke-width="0.9"/>
+            <circle r="28"  fill="none" stroke="#D4AF37" stroke-width="0.55"/>
+            <circle r="12"  fill="none" stroke="#D4AF37" stroke-width="0.7"/>
+            <circle r="4"   fill="#D4AF37"/>
+            <!-- Axis -->
+            <line x1="0" y1="-204" x2="0"    y2="204"  stroke="#D4AF37" stroke-width="0.45"/>
+            <line x1="-204" y1="0" x2="204"  y2="0"    stroke="#D4AF37" stroke-width="0.45"/>
+            <line x1="-144" y1="-144" x2="144" y2="144" stroke="#D4AF37" stroke-width="0.30"/>
+            <line x1="144"  y1="-144" x2="-144" y2="144" stroke="#D4AF37" stroke-width="0.30"/>
+            <!-- Jewels hexagonal r=116 -->
+            <circle cx="100"  cy="-58"  r="4.5" fill="none" stroke="#D4AF37" stroke-width="0.9"/>
+            <circle cx="0"    cy="-116" r="4.5" fill="none" stroke="#D4AF37" stroke-width="0.9"/>
+            <circle cx="-100" cy="-58"  r="4.5" fill="none" stroke="#D4AF37" stroke-width="0.9"/>
+            <circle cx="-100" cy="58"   r="4.5" fill="none" stroke="#D4AF37" stroke-width="0.9"/>
+            <circle cx="0"    cy="116"  r="4.5" fill="none" stroke="#D4AF37" stroke-width="0.9"/>
+            <circle cx="100"  cy="58"   r="4.5" fill="none" stroke="#D4AF37" stroke-width="0.9"/>
+            <!-- Hub spokes -->
+            <line x1="28"  y1="0"   x2="66"  y2="0"   stroke="#D4AF37" stroke-width="0.50"/>
+            <line x1="-28" y1="0"   x2="-66" y2="0"   stroke="#D4AF37" stroke-width="0.50"/>
+            <line x1="0"   y1="28"  x2="0"   y2="66"  stroke="#D4AF37" stroke-width="0.50"/>
+            <line x1="0"   y1="-28" x2="0"   y2="-66" stroke="#D4AF37" stroke-width="0.50"/>
+            <line x1="20"  y1="-20" x2="47"  y2="-47" stroke="#D4AF37" stroke-width="0.35"/>
+            <line x1="-20" y1="-20" x2="-47" y2="-47" stroke="#D4AF37" stroke-width="0.35"/>
+            <line x1="-20" y1="20"  x2="-47" y2="47"  stroke="#D4AF37" stroke-width="0.35"/>
+            <line x1="20"  y1="20"  x2="47"  y2="47"  stroke="#D4AF37" stroke-width="0.35"/>
+          </g>
+        </g>
+
+        <!-- Movement 3: Small — upper-right, scroll-rotated -->
+        <g transform="translate(1180, 60)" filter="url(#gearBlur)">
+          <g class="sys-gear" id="sysGear3">
+            <circle r="154" fill="none" stroke="#D4AF37" stroke-width="0.75"/>
+            <circle r="142" fill="none" stroke="#D4AF37" stroke-width="0.40" stroke-dasharray="2 22" stroke-linecap="round"/>
+            <circle r="130" fill="none" stroke="#D4AF37" stroke-width="0.55"/>
+            <circle r="112" fill="none" stroke="#D4AF37" stroke-width="1.0"  stroke-dasharray="6 85" stroke-linecap="round"/>
+            <circle r="98"  fill="none" stroke="#D4AF37" stroke-width="0.35"/>
+            <circle r="72"  fill="none" stroke="#D4AF37" stroke-width="0.45"/>
+            <circle r="50"  fill="none" stroke="#D4AF37" stroke-width="0.30" stroke-dasharray="2 16" stroke-linecap="round"/>
+            <circle r="34"  fill="none" stroke="#D4AF37" stroke-width="0.75"/>
+            <circle r="20"  fill="none" stroke="#D4AF37" stroke-width="0.55"/>
+            <circle r="8"   fill="none" stroke="#D4AF37" stroke-width="0.7"/>
+            <circle r="3"   fill="#D4AF37"/>
+            <!-- Axis -->
+            <line x1="0" y1="-154" x2="0"    y2="154"  stroke="#D4AF37" stroke-width="0.38"/>
+            <line x1="-154" y1="0" x2="154"  y2="0"    stroke="#D4AF37" stroke-width="0.38"/>
+            <line x1="-109" y1="-109" x2="109" y2="109" stroke="#D4AF37" stroke-width="0.25"/>
+            <line x1="109"  y1="-109" x2="-109" y2="109" stroke="#D4AF37" stroke-width="0.25"/>
+            <!-- Jewels at cardinal r=98 -->
+            <circle cx="0"   cy="-98" r="4" fill="none" stroke="#D4AF37" stroke-width="0.8"/>
+            <circle cx="98"  cy="0"   r="4" fill="none" stroke="#D4AF37" stroke-width="0.8"/>
+            <circle cx="0"   cy="98"  r="4" fill="none" stroke="#D4AF37" stroke-width="0.8"/>
+            <circle cx="-98" cy="0"   r="4" fill="none" stroke="#D4AF37" stroke-width="0.8"/>
+            <!-- Hub spokes -->
+            <line x1="20"  y1="0"   x2="72"  y2="0"   stroke="#D4AF37" stroke-width="0.45"/>
+            <line x1="-20" y1="0"   x2="-72" y2="0"   stroke="#D4AF37" stroke-width="0.45"/>
+            <line x1="0"   y1="20"  x2="0"   y2="72"  stroke="#D4AF37" stroke-width="0.45"/>
+            <line x1="0"   y1="-20" x2="0"   y2="-72" stroke="#D4AF37" stroke-width="0.45"/>
+            <line x1="14"  y1="-14" x2="35"  y2="-35" stroke="#D4AF37" stroke-width="0.30"/>
+            <line x1="-14" y1="-14" x2="-35" y2="-35" stroke="#D4AF37" stroke-width="0.30"/>
+            <line x1="-14" y1="14"  x2="-35" y2="35"  stroke="#D4AF37" stroke-width="0.30"/>
+            <line x1="14"  y1="14"  x2="35"  y2="35"  stroke="#D4AF37" stroke-width="0.30"/>
+          </g>
+        </g>
+
+      </svg>
+    </div>
+
+    <div class="container" style="position:relative;z-index:1">
+
+      <div class="system__header reveal">
+        <p class="section-eyebrow">Mechanizm biznesu</p>
+        <h2>Twoja firma to precyzyjny mechanizm —<br>badamy każdy&nbsp;tryb.</h2>
+        <p class="system__lead">Audyt strony to pierwszy krok. W zależności od potrzeb analizujemy cały łańcuch: od widoczności po automatyzacje, dane i procesy — bo jeden sprawny tryb napędza&nbsp;pozostałe.</p>
+      </div>
+
+      <!-- 3×2 card grid — serpentine flow (row1: →, row2: ←) -->
+      <div class="system__grid" id="sysGrid">
+        <svg class="sys-flow-svg" id="sysFlowSvg" aria-hidden="true"></svg>
+
+        <div class="sys-hub" aria-hidden="true">
+          <svg viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="80" cy="80" r="72" stroke="#D4AF37" stroke-width="0.5" stroke-dasharray="3 6"/>
+            <circle cx="80" cy="80" r="54" stroke="#D4AF37" stroke-width="0.75"/>
+            <circle cx="80" cy="80" r="36" stroke="#D4AF37" stroke-width="1"/>
+            <circle cx="80" cy="80" r="18" stroke="#D4AF37" stroke-width="1.25"/>
+            <circle cx="80" cy="80" r="5"  fill="#D4AF37"/>
+            <line x1="8"   y1="80"  x2="152" y2="80"  stroke="#D4AF37" stroke-width="0.5"/>
+            <line x1="80"  y1="8"   x2="80"  y2="152" stroke="#D4AF37" stroke-width="0.5"/>
+            <line x1="26"  y1="26"  x2="134" y2="134" stroke="#D4AF37" stroke-width="0.3"/>
+            <line x1="134" y1="26"  x2="26"  y2="134" stroke="#D4AF37" stroke-width="0.3"/>
+          </svg>
+        </div>
+
+        <div class="sys-card" data-card="1" style="--nd:0.10s">
+          <div class="sys-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+            </svg>
+          </div>
+          <div class="sys-card__num">01</div>
+          <h3 class="sys-card__title">Widoczność i SEO</h3>
+          <p class="sys-card__text">Sprawdzamy, jak firma jest widoczna w Google oraz wskazujemy działania, które mogą zwiększyć ruch i liczbę zapytań.</p>
+        </div>
+
+        <div class="sys-card" data-card="2" style="--nd:0.22s">
+          <div class="sys-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 11l19-9-9 19-2-8-8-2z"/>
+            </svg>
+          </div>
+          <div class="sys-card__num">02</div>
+          <h3 class="sys-card__title">Reklamy i działania konkurencji</h3>
+          <p class="sys-card__text">Analizujemy skuteczność kampanii oraz sposób komunikacji konkurencji. Pokazujemy, gdzie znajdują się największe szanse na poprawę wyników.</p>
+        </div>
+
+        <div class="sys-card" data-card="3" style="--nd:0.34s">
+          <div class="sys-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="17" y1="11" x2="22" y2="11"/><line x1="19.5" y1="8.5" x2="19.5" y2="13.5"/>
+            </svg>
+          </div>
+          <div class="sys-card__num">03</div>
+          <h3 class="sys-card__title">Pozyskiwanie klientów</h3>
+          <p class="sys-card__text">Identyfikujemy miejsca, w których firma traci potencjalnych klientów, oraz rekomendujemy zmiany zwiększające liczbę zapytań.</p>
+        </div>
+
+        <div class="sys-card" data-card="4" style="--nd:0.46s;grid-column:3;grid-row:2">
+          <div class="sys-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+            </svg>
+          </div>
+          <div class="sys-card__num">04</div>
+          <h3 class="sys-card__title">Proces sprzedaży i CRM</h3>
+          <p class="sys-card__text">Analizujemy ścieżkę klienta od pierwszego kontaktu do sprzedaży i wskazujemy rozwiązania usprawniające obsługę leadów.</p>
+        </div>
+
+        <div class="sys-card" data-card="5" style="--nd:0.58s;grid-column:2;grid-row:2">
+          <div class="sys-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+            </svg>
+          </div>
+          <div class="sys-card__num">05</div>
+          <h3 class="sys-card__title">Automatyzacje i organizacja pracy</h3>
+          <p class="sys-card__text">Wykrywamy procesy, które można uprościć, uporządkować lub zautomatyzować, aby oszczędzić czas zespołu.</p>
+        </div>
+
+        <div class="sys-card" data-card="6" style="--nd:0.70s;grid-column:1;grid-row:2">
+          <div class="sys-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/>
+            </svg>
+          </div>
+          <div class="sys-card__num">06</div>
+          <h3 class="sys-card__title">Dane i rozwój biznesu</h3>
+          <p class="sys-card__text">Sprawdzamy, jakie dane warto mierzyć oraz jak wykorzystać je do podejmowania lepszych decyzji biznesowych.</p>
+        </div>
+
+      </div>
+
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       GEAR DIVIDER — mechanism → about
+  ══════════════════════════════════════ -->
+  <div class="gear-divider gear-divider--ecru-to-white" aria-hidden="true">
+    <div class="gear-divider__line"></div>
+    <svg class="gear-deco gear-deco--lg" viewBox="0 0 160 160" fill="none">
+      <circle cx="80" cy="80" r="72" stroke="#D4AF37" stroke-width="1" stroke-dasharray="6 3"/>
+      <circle cx="80" cy="80" r="58" stroke="#D4AF37" stroke-width="0.5" stroke-dasharray="3 4"/>
+      <circle cx="80" cy="80" r="40" stroke="#D4AF37" stroke-width="0.75"/>
+      <circle cx="80" cy="80" r="12" stroke="#D4AF37" stroke-width="1"/>
+      <line x1="80" y1="8"   x2="80"  y2="40"  stroke="#D4AF37" stroke-width="0.75"/>
+      <line x1="152" y1="80" x2="120" y2="80"  stroke="#D4AF37" stroke-width="0.75"/>
+      <line x1="80"  y1="152" x2="80" y2="120" stroke="#D4AF37" stroke-width="0.75"/>
+      <line x1="8"   y1="80"  x2="40" y2="80"  stroke="#D4AF37" stroke-width="0.75"/>
+      <line x1="26"  y1="26"  x2="52" y2="52"  stroke="#D4AF37" stroke-width="0.5"/>
+      <line x1="134" y1="26"  x2="108" y2="52" stroke="#D4AF37" stroke-width="0.5"/>
+      <line x1="26"  y1="134" x2="52" y2="108" stroke="#D4AF37" stroke-width="0.5"/>
+      <line x1="134" y1="134" x2="108" y2="108" stroke="#D4AF37" stroke-width="0.5"/>
+    </svg>
+    <svg class="gear-deco gear-deco--sm" viewBox="0 0 100 100" fill="none">
+      <circle cx="50" cy="50" r="44" stroke="#D4AF37" stroke-width="0.75" stroke-dasharray="5 3"/>
+      <circle cx="50" cy="50" r="32" stroke="#D4AF37" stroke-width="0.5"/>
+      <circle cx="50" cy="50" r="8"  stroke="#D4AF37" stroke-width="0.75"/>
+      <line x1="50" y1="6"  x2="50" y2="24" stroke="#D4AF37" stroke-width="0.5"/>
+      <line x1="94" y1="50" x2="76" y2="50" stroke="#D4AF37" stroke-width="0.5"/>
+      <line x1="50" y1="94" x2="50" y2="76" stroke="#D4AF37" stroke-width="0.5"/>
+      <line x1="6"  y1="50" x2="24" y2="50" stroke="#D4AF37" stroke-width="0.5"/>
+    </svg>
+  </div>
+
+  <!-- ══════════════════════════════════════
+       ABOUT — Kto za tym stoi
+  ══════════════════════════════════════ -->
+  <section class="about-partner" id="o-nas">
+    <div class="about-partner__bg" aria-hidden="true">
+      <svg viewBox="0 0 1440 700" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+        <g transform="translate(1460, 560)">
+          <circle r="300" fill="none" stroke="#D4AF37" stroke-width="28" stroke-dasharray="34 43" stroke-linecap="butt" opacity="0.04"/>
+          <circle r="285" fill="none" stroke="#D4AF37" stroke-width="0.7" opacity="0.03"/>
+        </g>
+        <g transform="translate(-60, 100)">
+          <circle r="180" fill="none" stroke="#D4AF37" stroke-width="20" stroke-dasharray="24 37" stroke-linecap="butt" opacity="0.035"/>
+          <circle r="168" fill="none" stroke="#D4AF37" stroke-width="0.6" opacity="0.025"/>
+        </g>
+      </svg>
+    </div>
+    <div class="container" style="position:relative;z-index:1">
+      <div class="about-partner__inner">
+
+        <!-- LEFT: tekst -->
+        <div class="about-partner__text reveal">
+          <p class="section-eyebrow">Kto za tym stoi</p>
+          <h2 class="about-partner__h2">Marketing i technologia działają najlepiej, gdy współpracują ze&nbsp;sobą.</h2>
+          <div class="about-partner__copy">
+            <p><strong>Joanna Kłos Marketing</strong> odpowiada za strategię, marketing, widoczność online i&nbsp;rozwój marki.</p>
+            <p><strong>Logic-Flow</strong> odpowiada za procesy biznesowe, automatyzacje, AI, CRM i&nbsp;dane.</p>
+            <p>Razem pomagamy firmom nie tylko lepiej wyglądać w internecie, ale również skuteczniej pozyskiwać klientów i&nbsp;rozwijać biznes.</p>
+          </div>
+        </div>
+
+        <!-- RIGHT: synergy profiles -->
+        <div class="about-partner__profiles reveal">
+          <div class="synergy">
+
+            <!-- Joanna Kłos -->
+            <div class="synergy__col">
+              <div class="partner-card partner-card--vert">
+                <div class="partner-card__photo">
+                  <img src="Joanna%20K%C5%82os%20zdjecie.png" alt="Joanna Kłos" loading="lazy">
+                </div>
+                <div class="partner-card__body">
+                  <strong class="partner-card__name">Joanna Kłos</strong>
+                  <span class="partner-card__company">Joanna Kłos Marketing</span>
+                  <div class="partner-card__tags">
+                    <span class="partner-tag">Strategia</span>
+                    <span class="partner-tag">Marketing</span>
+                    <span class="partner-tag">SEO</span>
+                    <span class="partner-tag">Marka</span>
+                  </div>
+                </div>
+              </div>
+              <ul class="synergy__list">
+                <li>Strategia i pozycjonowanie marki</li>
+                <li>Marketing online i widoczność</li>
+                <li>Komunikacja i content</li>
+                <li>Reklamy i kampanie</li>
+              </ul>
+            </div>
+
+            <!-- Central connector -->
+            <div class="synergy__bridge" aria-hidden="true">
+              <div class="synergy__vline"></div>
+              <div class="synergy__node">
+                <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="22" cy="22" r="19" stroke="#D4AF37" stroke-width="0.6" stroke-dasharray="3 4"/>
+                  <circle cx="22" cy="22" r="12" stroke="#D4AF37" stroke-width="1"/>
+                  <circle cx="22" cy="22" r="5"  stroke="#D4AF37" stroke-width="1.25"/>
+                  <circle cx="22" cy="22" r="2"  fill="#D4AF37"/>
+                  <line x1="3"  y1="22" x2="41" y2="22" stroke="#D4AF37" stroke-width="0.6"/>
+                  <line x1="22" y1="3"  x2="22" y2="41" stroke="#D4AF37" stroke-width="0.6"/>
+                </svg>
+              </div>
+              <div class="synergy__vline synergy__vline--fade"></div>
+            </div>
+
+            <!-- Logic-Flow -->
+            <div class="synergy__col">
+              <div class="partner-card partner-card--vert">
+                <div class="partner-card__photo">
+                  <img src="Profile%20Logic-flow.png" alt="Logic-Flow" loading="lazy">
+                </div>
+                <div class="partner-card__body">
+                  <strong class="partner-card__name">Paweł Ziemialski</strong>
+                  <span class="partner-card__company">Logic-Flow · Technologia i automatyzacja</span>
+                  <div class="partner-card__tags">
+                    <span class="partner-tag">Automatyzacje</span>
+                    <span class="partner-tag">AI</span>
+                    <span class="partner-tag">CRM</span>
+                    <span class="partner-tag">Dane</span>
+                  </div>
+                </div>
+              </div>
+              <ul class="synergy__list">
+                <li>Procesy biznesowe i CRM</li>
+                <li>Automatyzacje i integracje</li>
+                <li>AI i analityka danych</li>
+                <li>Skalowanie systemów</li>
+              </ul>
+            </div>
+
+          </div>
+
+          <!-- Shared outcome -->
+          <div class="synergy__outcome">
+            <div class="synergy__rule"></div>
+            <p class="synergy__outcome-label">Jeden spójny system pozyskiwania klientów</p>
+            <div class="synergy__rule synergy__rule--rev"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       GEAR DIVIDER — about → zakres wsparcia
+  ══════════════════════════════════════ -->
+  <div class="gear-divider gear-divider--white-to-ecru" aria-hidden="true">
+    <div class="gear-divider__line"></div>
+    <svg class="gear-deco gear-deco--lg" viewBox="0 0 160 160" fill="none">
+      <circle cx="80" cy="80" r="72" stroke="#D4AF37" stroke-width="1" stroke-dasharray="6 3"/>
+      <circle cx="80" cy="80" r="58" stroke="#D4AF37" stroke-width="0.5" stroke-dasharray="3 4"/>
+      <circle cx="80" cy="80" r="40" stroke="#D4AF37" stroke-width="0.75"/>
+      <circle cx="80" cy="80" r="12" stroke="#D4AF37" stroke-width="1"/>
+      <line x1="80" y1="8"   x2="80"  y2="40"  stroke="#D4AF37" stroke-width="0.75"/>
+      <line x1="152" y1="80" x2="120" y2="80"  stroke="#D4AF37" stroke-width="0.75"/>
+      <line x1="80"  y1="152" x2="80" y2="120" stroke="#D4AF37" stroke-width="0.75"/>
+      <line x1="8"   y1="80"  x2="40" y2="80"  stroke="#D4AF37" stroke-width="0.75"/>
+      <line x1="26"  y1="26"  x2="52" y2="52"  stroke="#D4AF37" stroke-width="0.5"/>
+      <line x1="134" y1="26"  x2="108" y2="52" stroke="#D4AF37" stroke-width="0.5"/>
+      <line x1="26"  y1="134" x2="52" y2="108" stroke="#D4AF37" stroke-width="0.5"/>
+      <line x1="134" y1="134" x2="108" y2="108" stroke="#D4AF37" stroke-width="0.5"/>
+    </svg>
+    <svg class="gear-deco gear-deco--sm" viewBox="0 0 100 100" fill="none">
+      <circle cx="50" cy="50" r="44" stroke="#D4AF37" stroke-width="0.75" stroke-dasharray="5 3"/>
+      <circle cx="50" cy="50" r="32" stroke="#D4AF37" stroke-width="0.5"/>
+      <circle cx="50" cy="50" r="8"  stroke="#D4AF37" stroke-width="0.75"/>
+      <line x1="50" y1="6"  x2="50" y2="24" stroke="#D4AF37" stroke-width="0.5"/>
+      <line x1="94" y1="50" x2="76" y2="50" stroke="#D4AF37" stroke-width="0.5"/>
+      <line x1="50" y1="94" x2="50" y2="76" stroke="#D4AF37" stroke-width="0.5"/>
+      <line x1="6"  y1="50" x2="24" y2="50" stroke="#D4AF37" stroke-width="0.5"/>
+    </svg>
+  </div>
+
+  <!-- ══════════════════════════════════════
+       ZAKRES WSPARCIA
+  ══════════════════════════════════════ -->
+  <section class="scope" id="zakres">
+    <div class="container">
+
+      <div class="scope__header reveal">
+        <p class="section-eyebrow">Zakres wsparcia</p>
+        <h2 class="scope__h2">Obszary, w których<br><span class="scope__h2-gold">działamy razem.</span></h2>
+        <p class="scope__lead">Jeden mechanizm. Każdy element napędza&nbsp;kolejny.</p>
+      </div>
+
+      <div class="scope-system reveal">
+
+        <!-- LEFT ARM: Widoczność i Marka -->
+        <div class="scope-arm scope-arm--left">
+          <p class="scope-cluster">Widoczność i Marka</p>
+          <div class="scope-node">
+            <span class="scope-node__text">Strategia marki</span>
+            <span class="scope-node__num">01</span>
+            <span class="scope-node__line"></span>
+            <span class="scope-node__dot"></span>
+          </div>
+          <div class="scope-node">
+            <span class="scope-node__text">Strony internetowe</span>
+            <span class="scope-node__num">02</span>
+            <span class="scope-node__line"></span>
+            <span class="scope-node__dot"></span>
+          </div>
+          <div class="scope-node">
+            <span class="scope-node__text">SEO i widoczność w Google</span>
+            <span class="scope-node__num">03</span>
+            <span class="scope-node__line"></span>
+            <span class="scope-node__dot"></span>
+          </div>
+          <div class="scope-node">
+            <span class="scope-node__text">Kampanie Google Ads</span>
+            <span class="scope-node__num">04</span>
+            <span class="scope-node__line"></span>
+            <span class="scope-node__dot"></span>
+          </div>
+          <div class="scope-node">
+            <span class="scope-node__text">Kampanie Meta Ads</span>
+            <span class="scope-node__num">05</span>
+            <span class="scope-node__line"></span>
+            <span class="scope-node__dot"></span>
+          </div>
+          <div class="scope-node">
+            <span class="scope-node__text">Kampanie LinkedIn Ads</span>
+            <span class="scope-node__num">06</span>
+            <span class="scope-node__line"></span>
+            <span class="scope-node__dot"></span>
+          </div>
+        </div>
+
+        <!-- CENTER: precision mechanism hub -->
+        <div class="scope-core" aria-hidden="true">
+          <svg class="scope-core__svg" viewBox="0 0 280 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Outer dashed ring — rotates slowly -->
+            <circle class="ring--orbit" cx="140" cy="140" r="132" stroke="#D4AF37" stroke-width="0.5" stroke-dasharray="5 9" opacity="0.32"/>
+            <!-- Construction rings -->
+            <circle cx="140" cy="140" r="110" stroke="#D4AF37" stroke-width="0.5" opacity="0.18"/>
+            <circle cx="140" cy="140" r="88"  stroke="#D4AF37" stroke-width="0.75" opacity="0.24"/>
+            <circle cx="140" cy="140" r="66"  stroke="#D4AF37" stroke-width="0.75" opacity="0.30"/>
+            <!-- Hub boundary ring -->
+            <circle cx="140" cy="140" r="46"  stroke="#D4AF37" stroke-width="1"    opacity="0.48"/>
+            <!-- Inner jewel ring -->
+            <circle cx="140" cy="140" r="28"  stroke="#D4AF37" stroke-width="1.5"  opacity="0.60"/>
+            <!-- Centre fill -->
+            <circle cx="140" cy="140" r="6"   fill="#D4AF37"                       opacity="0.72"/>
+            <!-- Axis lines -->
+            <line x1="4"   y1="140" x2="276" y2="140" stroke="#D4AF37" stroke-width="0.35" opacity="0.18"/>
+            <line x1="140" y1="4"   x2="140" y2="276" stroke="#D4AF37" stroke-width="0.35" opacity="0.18"/>
+            <!-- Diagonal construction lines -->
+            <line x1="47"  y1="47"  x2="233" y2="233" stroke="#D4AF37" stroke-width="0.25" opacity="0.10"/>
+            <line x1="233" y1="47"  x2="47"  y2="233" stroke="#D4AF37" stroke-width="0.25" opacity="0.10"/>
+            <!-- Cardinal tick marks at outermost ring -->
+            <line x1="140" y1="4"   x2="140" y2="22"  stroke="#D4AF37" stroke-width="1.2" opacity="0.40"/>
+            <line x1="140" y1="258" x2="140" y2="276" stroke="#D4AF37" stroke-width="1.2" opacity="0.40"/>
+            <line x1="4"   y1="140" x2="22"  y2="140" stroke="#D4AF37" stroke-width="1.2" opacity="0.40"/>
+            <line x1="258" y1="140" x2="276" y2="140" stroke="#D4AF37" stroke-width="1.2" opacity="0.40"/>
+            <!-- Jewels at cardinal points of hub ring -->
+            <circle cx="140" cy="94"  r="3.5" fill="none" stroke="#D4AF37" stroke-width="0.9" opacity="0.55"/>
+            <circle cx="186" cy="140" r="3.5" fill="none" stroke="#D4AF37" stroke-width="0.9" opacity="0.55"/>
+            <circle cx="140" cy="186" r="3.5" fill="none" stroke="#D4AF37" stroke-width="0.9" opacity="0.55"/>
+            <circle cx="94"  cy="140" r="3.5" fill="none" stroke="#D4AF37" stroke-width="0.9" opacity="0.55"/>
+            <!-- Edge connector anchors (where arm lines meet centre) -->
+            <circle cx="4"   cy="140" r="4" fill="#D4AF37" opacity="0.50"/>
+            <circle cx="276" cy="140" r="4" fill="#D4AF37" opacity="0.50"/>
+          </svg>
+          <div class="scope-core__label">
+          </div>
+        </div>
+
+        <!-- RIGHT ARM: Technologia i Systemy -->
+        <div class="scope-arm scope-arm--right">
+          <p class="scope-cluster">Technologia i Systemy</p>
+          <div class="scope-node">
+            <span class="scope-node__dot"></span>
+            <span class="scope-node__line"></span>
+            <span class="scope-node__num">07</span>
+            <span class="scope-node__text">Social Media</span>
+          </div>
+          <div class="scope-node">
+            <span class="scope-node__dot"></span>
+            <span class="scope-node__line"></span>
+            <span class="scope-node__num">08</span>
+            <span class="scope-node__text">CRM i zarządzanie leadami</span>
+          </div>
+          <div class="scope-node">
+            <span class="scope-node__dot"></span>
+            <span class="scope-node__line"></span>
+            <span class="scope-node__num">09</span>
+            <span class="scope-node__text">Automatyzacje procesów</span>
+          </div>
+          <div class="scope-node">
+            <span class="scope-node__dot"></span>
+            <span class="scope-node__line"></span>
+            <span class="scope-node__num">10</span>
+            <span class="scope-node__text">AI w biznesie</span>
+          </div>
+          <div class="scope-node">
+            <span class="scope-node__dot"></span>
+            <span class="scope-node__line"></span>
+            <span class="scope-node__num">11</span>
+            <span class="scope-node__text">Integracje systemów</span>
+          </div>
+          <div class="scope-node">
+            <span class="scope-node__dot"></span>
+            <span class="scope-node__line"></span>
+            <span class="scope-node__num">12</span>
+            <span class="scope-node__text">Dane i analityka</span>
+          </div>
+        </div>
+
+      </div><!-- /scope-system -->
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       GEAR DIVIDER — zakres → form
+  ══════════════════════════════════════ -->
+  <div class="gear-divider gear-divider--ecru-to-white" aria-hidden="true">
+    <div class="gear-divider__line"></div>
+    <svg class="gear-deco gear-deco--lg" viewBox="0 0 160 160" fill="none">
+      <circle cx="80" cy="80" r="72" stroke="#D4AF37" stroke-width="1" stroke-dasharray="6 3"/>
+      <circle cx="80" cy="80" r="58" stroke="#D4AF37" stroke-width="0.5" stroke-dasharray="3 4"/>
+      <circle cx="80" cy="80" r="40" stroke="#D4AF37" stroke-width="0.75"/>
+      <circle cx="80" cy="80" r="12" stroke="#D4AF37" stroke-width="1"/>
+      <line x1="80" y1="8"   x2="80"  y2="40"  stroke="#D4AF37" stroke-width="0.75"/>
+      <line x1="152" y1="80" x2="120" y2="80"  stroke="#D4AF37" stroke-width="0.75"/>
+      <line x1="80"  y1="152" x2="80" y2="120" stroke="#D4AF37" stroke-width="0.75"/>
+      <line x1="8"   y1="80"  x2="40" y2="80"  stroke="#D4AF37" stroke-width="0.75"/>
+      <line x1="26"  y1="26"  x2="52" y2="52"  stroke="#D4AF37" stroke-width="0.5"/>
+      <line x1="134" y1="26"  x2="108" y2="52" stroke="#D4AF37" stroke-width="0.5"/>
+      <line x1="26"  y1="134" x2="52" y2="108" stroke="#D4AF37" stroke-width="0.5"/>
+      <line x1="134" y1="134" x2="108" y2="108" stroke="#D4AF37" stroke-width="0.5"/>
+    </svg>
+    <svg class="gear-deco gear-deco--sm" viewBox="0 0 100 100" fill="none">
+      <circle cx="50" cy="50" r="44" stroke="#D4AF37" stroke-width="0.75" stroke-dasharray="5 3"/>
+      <circle cx="50" cy="50" r="32" stroke="#D4AF37" stroke-width="0.5"/>
+      <circle cx="50" cy="50" r="8"  stroke="#D4AF37" stroke-width="0.75"/>
+      <line x1="50" y1="6"  x2="50" y2="24" stroke="#D4AF37" stroke-width="0.5"/>
+      <line x1="94" y1="50" x2="76" y2="50" stroke="#D4AF37" stroke-width="0.5"/>
+      <line x1="50" y1="94" x2="50" y2="76" stroke="#D4AF37" stroke-width="0.5"/>
+      <line x1="6"  y1="50" x2="24" y2="50" stroke="#D4AF37" stroke-width="0.5"/>
+    </svg>
+  </div>
+
+  <!-- ══════════════════════════════════════
+       FORM — Zamów bezpłatny audyt
+  ══════════════════════════════════════ -->
+  <section class="form-audit" id="formularz">
+    <div class="container">
+      <div class="form-audit__inner">
+
+        <!-- LEFT: intro + korzyści -->
+        <div class="form-audit__left reveal">
+          <p class="section-eyebrow">Pierwszy krok</p>
+          <h2 class="form-audit__h2">Zamów bezpłatny audyt strony&nbsp;WWW</h2>
+          <p class="form-audit__desc">Prześlij adres swojej strony i adres e-mail. Przygotujemy analizę najważniejszych obszarów wpływających na widoczność i skuteczność Twojej&nbsp;strony.</p>
+          <ul class="form-benefits">
+            <li><span class="benefit-icon" aria-hidden="true">✓</span><span>Analiza strony WWW</span></li>
+            <li><span class="benefit-icon" aria-hidden="true">✓</span><span>Ocena widoczności w Google</span></li>
+            <li><span class="benefit-icon" aria-hidden="true">✓</span><span>Identyfikacja najważniejszych problemów</span></li>
+            <li><span class="benefit-icon" aria-hidden="true">✓</span><span>Lista priorytetów do wdrożenia</span></li>
+            <li><span class="benefit-icon" aria-hidden="true">✓</span><span>Bezpłatna konsultacja po analizie</span></li>
+          </ul>
+        </div>
+
+        <!-- RIGHT: formularz -->
+        <div class="form-audit__right reveal">
+          <div class="form-audit__card">
+            <ol class="audit-steps" aria-label="Jak to działa">
+              <li class="audit-step">
+                <span class="audit-step__num">1</span>
+                <span class="audit-step__label">Adres strony</span>
+              </li>
+              <li class="audit-step__sep" aria-hidden="true">→</li>
+              <li class="audit-step">
+                <span class="audit-step__num">2</span>
+                <span class="audit-step__label">Adres e-mail</span>
+              </li>
+              <li class="audit-step__sep" aria-hidden="true">→</li>
+              <li class="audit-step">
+                <span class="audit-step__num">3</span>
+                <span class="audit-step__label">Otrzymujesz audyt</span>
+              </li>
+            </ol>
+            <form class="contact-form" id="contactForm" novalidate>
+              <div class="form-group">
+                <label for="furl">Adres strony WWW <span class="label-required">*</span></label>
+                <input type="url" id="furl" name="url" placeholder="https://twojafirma.pl" required autocomplete="url">
+              </div>
+              <div class="form-group">
+                <label for="femail">Adres e-mail <span class="label-required">*</span></label>
+                <input type="email" id="femail" name="email" placeholder="jan@firma.pl" required autocomplete="email">
+              </div>
+              <div class="form-group form-consent">
+                <label class="consent-label">
+                  <input type="checkbox" id="fprivacy" name="privacy" required>
+                  <span class="consent-box" aria-hidden="true"></span>
+                  <span class="consent-text">Zapoznałem(-am) się z <a href="#" class="consent-link">Polityką Prywatności</a> i wyrażam zgodę na kontakt w sprawie bezpłatnego audytu.</span>
+                </label>
+              </div>
+              <button type="submit" class="btn btn--primary btn--full">Otrzymaj bezpłatny audyt strony WWW &rarr;</button>
+              <p class="form-note">Wypełnienie formularza zajmuje mniej niż 30 sekund.<br>Nie wysyłamy spamu.</p>
+            </form>
+            <div class="form-success" id="formSuccess" hidden>
+              <div class="form-success__icon" aria-hidden="true">✓</div>
+              <h3>Dziękujemy!</h3>
+              <p>Odezwiemy się w ciągu 24 godzin i przeanalizujemy Twoją stronę.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       BOTTOM BAR — kompaktowy pasek CTA
+  ══════════════════════════════════════ -->
+  <div class="bottom-bar">
+    <div class="container bottom-bar__inner">
+      <p class="bottom-bar__tagline">Odkryj. Zrozum. Działaj.</p>
+      <a href="#formularz" class="bottom-bar__cta">Zacznij od bezpłatnego audytu &rarr;</a>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="#" class="footer__logo">
+            <span class="footer__logo-main">LOGIC-<span class="logo-cyan">FLOW</span></span>
+            <span class="footer__logo-sub">_marketing</span>
+          </a>
+          <p>Budujemy systemy pozyskiwania klientów oparte na danych, procesach i technologii.</p>
+        </div>
+        <nav class="footer__nav" aria-label="Nawigacja stopki">
+          <a href="#dowod">Przykładowy raport</a>
+          <a href="#mechanizm">Co badamy</a>
+          <a href="#formularz">Bezpłatny audyt</a>
+          <a href="mailto:kontakt@logic-flow.pl">kontakt@logic-flow.pl</a>
+        </nav>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2025 Logic-Flow · Joanna Kłos Marketing. Wszelkie prawa zastrzeżone.</span>
+        <a href="#">Polityka prywatności</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+# Design references — not deployed
+visual-reference-hero-v1.png
+
+# OS artefacts
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+
+# Temp / build
+node_modules/
+*.tmp
+*.log
